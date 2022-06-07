@@ -1,0 +1,15 @@
+﻿@model Ogretmen
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Öğretmen Bilgileri</h1>
+
+<p>@(((Ogretmen)(ViewData["ogretmen"])).Ad)</p>
+
+<p>@ViewBag.ogrt.Ad</p>
+
+@ViewData["ogretmen"]
+
+@Model.Ad
+@Model.Soyad

@@ -1,0 +1,27 @@
+﻿@model Ogrenci
+@{ ViewData["Title"] = "OgrenciEkle"; }
+
+<h1>Ogrenci Ekle</h1>
+
+<form asp-controller="Ogrenci" asp-action="OgrenciEkle" name="ekleForm" method="post">
+    <label for="name">Ad</label>
+    <input type="text" asp-for="Ad" />
+    <label for="surname">Soyad</label>
+    @Html.TextBoxFor(o => o.Soyad)
+    <label for="numara">Numara</label>
+    <input type="number" name="Numara" />
+
+    <button id="btnKaydet" class="btn btn-sm btn-outline-secondary text-justify" type="submit" style="font-family:Verdana;color:darkred;background-color:burlywood">Kaydet</button>
+
+</form>
+<script>
+    btnKaydet.onclick = function () {
+        confirm("Yeni Öğrenci eklensin mi?")
+        if (confirm) {
+            window.alert("Öğrenci başarıyla eklendi..")
+        } else {
+            window.alert("Ekleme işlemi başarısız!")
+        }
+
+    }
+</script>

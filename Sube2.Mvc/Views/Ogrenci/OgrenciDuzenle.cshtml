@@ -1,0 +1,36 @@
+﻿
+@{
+    @model Ogrenci
+    ViewData["Title"] = "OgrenciDuzenle";
+}
+
+<h1>Ogrenci Duzenle</h1>
+
+    
+<form action="/Ogrenci/OgrenciDuzenle" name="duzenleForm" method="post">
+    @Html.HiddenFor(o => o.Ogrenciid)
+    <table class="table table-dark">
+        <thead align="center">
+        <tr colspan="2"><th>Öğrenci Güncelleme Formu</th></tr>
+        </thead>
+        <tbody>
+               <tr><td><label for="name">Ad</label></td><td>@Html.TextBoxFor(o => o.Ad)</td></tr>
+               <tr><td><label for="surname">Soyad</label></td><td>@Html.TextBoxFor(o => o.Soyad)</td></tr>
+               <tr><td><label for="no">Numara</label></td><td>@Html.TextBoxFor(o => o.Numara)</td></tr>
+               <tr colspan="2"><td align="center"><input id="guncel" name="degistir" class="btn btn-sm btn-outline-secondary text-justify" type="submit" style="font-family:Verdana;color:blue;background-color:burlywood" value="Değiştir" /></td></tr>
+        </tbody>
+    </table>
+</form>
+
+<script>  
+    guncel.onclick = function () {
+        confirm("Öğrenci bilgileri değiştirilsin mi?")
+        if (confirm) {
+            window.alert("Başarıyla Değiştirildi!")
+        } else {
+            window.alert("Değiştirilme işlemi başarısız!")
+        }
+        
+    }
+</script>
+

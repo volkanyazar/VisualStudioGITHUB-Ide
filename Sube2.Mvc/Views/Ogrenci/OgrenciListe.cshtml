@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Ogrenci>
+@{
+    ViewData["Title"] = "OgrenciListe";
+}
+
+<h1>Ogrenci Listesi</h1>
+
+<table id="tablom" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Numara</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Ad</td>
+                <td>@item.Soyad</td>
+                <td>@item.Numara</td>
+                <td><a id="btnDuzenle" href="/Ogrenci/OgrenciDuzenle/@item.Ogrenciid" onclick="return alert('Düzenleme formuna gidiliyor..')" name="datas" class="btn btn-sm btn-success text-white">Düzenle </a>  <a id="btnSil" onclick=" return confirm('Öğrenci Silinecektir.. Emin misiniz?')
+        if (confirm) {
+            window.alert('Öğrenci başarıyla silindi..')
+        } else {
+            window.alert('Öğrenci silme işmeninde hata meydana geldi..')
+        }" href="/Ogrenci/OgrenciSil/@item.Ogrenciid" class="btn btn-sm btn-danger text-white">Sil </a></td>
+            </tr>
+        }
+    </tbody>
+</table>
