@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Gazi Üniversitesi</h1>
+ 
+   <ul>
+    @for (var  i= 0; i < 3; i++)
+   {
+       <li>gazi</li>
+   }
+   </ul>
+
+   <p>
+       Okul Adı:@ViewData["Okul"]
+   </p>
+   <p>
+       Bölüm:@ViewData["Bolum"]
+   </p>
+</body>
+</html>
