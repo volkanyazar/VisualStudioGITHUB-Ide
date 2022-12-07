@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolkanAppEntityFrameWork", "VolkanAppEntityFrameWork\VolkanAppEntityFrameWork.csproj", "{7955CF1E-2E8C-4BCE-915B-8F4FFEC00F44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7955CF1E-2E8C-4BCE-915B-8F4FFEC00F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7955CF1E-2E8C-4BCE-915B-8F4FFEC00F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7955CF1E-2E8C-4BCE-915B-8F4FFEC00F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7955CF1E-2E8C-4BCE-915B-8F4FFEC00F44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7814CB47-C491-44E3-BD3A-293DE1096E17}
+	EndGlobalSection
+EndGlobal
